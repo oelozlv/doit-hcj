@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>srcset 실습</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+    }
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+  </style>
+  <title>srcset</title>
+</head>
+<body>
+
+  <h1>반응형 이미지(srcset) 예제</h1>
+
+  <img 
+    src="images/sky.jpg" 
+    srcset="images/sky-1.jpg 400w,
+            images/sky-2.jpg 800w,
+            images/sky-3.jpg 1200w"
+    sizes="(max-width: 600px) 100vw, 600px"
+    alt="반응형 이미지 예제">
+
+  <p>화면 크기에 따라 이미지가 달라집니다.</p>
+
+</body>
+</html>
